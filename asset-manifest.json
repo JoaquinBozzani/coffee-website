@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/coffee-website/static/css/main.c7785aef.css",
+    "main.js": "/coffee-website/static/js/main.5d9c895f.js",
+    "static/media/coffee-3.jpg": "/coffee-website/static/media/coffee-3.3d92cea6efcbc7e1dd3d.jpg",
+    "static/media/coffee-1.jpg": "/coffee-website/static/media/coffee-1.93d2794ad74f3deebc39.jpg",
+    "static/media/coffee-2.jpg": "/coffee-website/static/media/coffee-2.51d27f2269b5ca364003.jpg",
+    "static/media/post-2.jpg": "/coffee-website/static/media/post-2.36068dedcb09eb7ce28d.jpg",
+    "static/media/post-1.jpg": "/coffee-website/static/media/post-1.582bd75808eab111eea8.jpg",
+    "static/media/post-3.jpg": "/coffee-website/static/media/post-3.dfd1ea9066c2d4856d50.jpg",
+    "static/media/logo-white.svg": "/coffee-website/static/media/logo-white.acb26cf17061077b08273987aaffdf12.svg",
+    "static/media/search.svg": "/coffee-website/static/media/search.ffdf101837e7415dce21b66ac877e83b.svg",
+    "static/media/instagram-white.svg": "/coffee-website/static/media/instagram-white.ae22ad2e3b87a194288e20eb905132ba.svg",
+    "static/media/twitter-white.svg": "/coffee-website/static/media/twitter-white.8949f6fdc90299b7d4f40d9c147bfeca.svg",
+    "index.html": "/coffee-website/index.html",
+    "static/media/linkedin-white.svg": "/coffee-website/static/media/linkedin-white.f33521335049362937cdfd96eaa480e2.svg",
+    "static/media/facebook-white.svg": "/coffee-website/static/media/facebook-white.bb9b9ef976358e037be1bf23aae628b3.svg",
+    "static/media/close.svg": "/coffee-website/static/media/close.b5f73ece9c836ea8152d02092253d487.svg",
+    "main.c7785aef.css.map": "/coffee-website/static/css/main.c7785aef.css.map",
+    "main.5d9c895f.js.map": "/coffee-website/static/js/main.5d9c895f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7785aef.css",
+    "static/js/main.5d9c895f.js"
+  ]
+}
