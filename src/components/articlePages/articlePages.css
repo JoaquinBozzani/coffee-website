@@ -1,0 +1,164 @@
+/* ----- ARTICLES ----- */
+.article {
+    margin-top: 10%;
+    text-align: left;
+}
+
+.article-img {
+    max-height: 300px;
+    width: 100%;
+}
+
+.article-title {
+    color: black;
+    margin: 2% 0;
+}
+
+.article-date {
+    color: rgba(0, 0, 0, .5);
+    margin: 2% 0;
+}
+
+.article-text {
+    display: -webkit-box;
+    
+    font-size: large;
+    line-height: 2rem;
+    
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical; 
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+
+    height: 100%;
+    max-width: 80%;
+    margin: 2% 0;
+
+}
+
+/* ARTICLE MODAL BUTTON */
+.open-article-button {
+    font-family: inherit;
+    font-size: 1.2rem;
+
+    margin: 2% 0;
+    padding: 3%;
+    
+    background-color: white;
+    border: 1px solid black;
+    
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.article-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* ----- PAGES ----- */
+.page-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 5%;
+
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.page-button {
+    font-family: inherit;
+    font-size: 1.1rem;
+    text-align: center;
+
+    width: 100px;
+    margin: 5% 0;
+    padding: 3%;
+    
+    background-color: white;
+    border: 1px solid black;
+    
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.page-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* to fix some issues with very small devices */
+@media (max-width: 340px) {
+    .page-controls p {
+        font-size: 0.8rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    /* ----- ARTICLES ----- */
+    .article {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    
+    .article-img {
+        grid-area: 1 / 1 / 2 / 2;
+        height: 100%;
+    }
+    
+    .article-content {
+        grid-area: 1 / 2 / 2 / 3;
+        text-align: justify;
+        margin: 0 5%;
+    }
+
+    .article-title {
+        margin: 0;
+    }
+
+    .article-date {
+        margin: 1% 0;
+    }
+
+    .article-text {
+        display: -webkit-box;
+        
+        font-size: large;
+        line-height: 2rem;
+        
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical; 
+        
+        text-overflow: ellipsis;
+        overflow: hidden;
+    
+        height: 45%;
+        margin: 0;
+    }
+
+    /* ARTICLE MODAL BUTTON */
+    .open-article-button {
+        padding: 1%;
+    }
+
+
+    /* ----- PAGES ----- */
+    .article-page-container {
+        width: 70%;
+    }
+
+    .page-button {
+        padding: 1%;
+    }
+
+    .page-controls {
+        border-bottom: none;
+    }
+}

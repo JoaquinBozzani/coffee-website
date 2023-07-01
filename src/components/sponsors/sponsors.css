@@ -1,0 +1,47 @@
+.sponsors {
+    margin: 20% 8%;
+}
+
+.sponsors-title {
+    font-size: 1.7rem;
+    margin: 10% 0;
+}
+
+.sponsors-logo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.sponsor {
+    width: 100%;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+
+    .sponsors {
+        margin: 10% 8%;
+        margin-bottom: 10%;
+    }
+
+    .sponsors-title {
+        text-align: center;
+        font-size: 1.7rem;
+        margin: 2% 0;
+
+    }
+
+    .sponsors-logo-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .sponsor {
+        width: 8%;
+    }
+}

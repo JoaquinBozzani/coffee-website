@@ -1,0 +1,97 @@
+.article-modal {
+    position: fixed;
+
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+
+    left: 0;
+    top: 0;
+
+    margin: 0;
+    padding: 0;
+
+
+    transform: translateY(100%);
+    transition: all .3s ease-in-out;
+    
+    opacity: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+
+.modal-text-container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: left;
+
+    padding: 0 8%;
+    height: 100%;
+}
+
+.modal-text-container .article-text {
+    overflow: visible;
+}
+
+.article-modal .article-img {
+    width: 100%;
+}
+
+/* CLOSE MODAL BUTTON */
+.close-modal {
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+
+    padding: 1rem;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+}
+
+
+/* WHEN MODAL IS OPEN */
+.article-modal.open {
+    pointer-events: all;
+    
+    overflow: scroll;
+    transform: translateY(0);
+    transition: all .3s ease-in-out;
+    opacity: 1;
+}
+
+body.article-modal.open {
+    overflow-y: hidden;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+/* DESKTOP */
+@media (min-width: 1200px) {
+    /* ----- MODAL OVERLAY ----- */
+    .article-modal {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(40px);
+        padding: 10%;
+    }
+    
+    .modal-text-container {
+        padding: 0 5%;
+
+    }
+
+    /* MODAL */
+    .modal-content {
+        width: 50vw;
+        height: 100vh;
+        background-color: white;
+    }
+
+}

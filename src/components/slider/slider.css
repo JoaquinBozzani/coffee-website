@@ -1,0 +1,153 @@
+.slider-container {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slide {
+    min-width: 100%;
+    height: 300px;
+    position: relative;
+
+    object-fit: cover;
+    transition: .3s ease-out all;
+}
+
+.mobile-controls {
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+.desktop-controls {
+    display: none;
+} 
+
+
+.slider-button {
+    position: absolute;
+
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, .8);
+    outline: none;
+
+    height: 90%;
+    padding: 2%;
+    font-size: 2rem;
+    text-align: center;
+
+    cursor: pointer;
+    pointer-events: all;
+    transition: .3s ease all;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.slider-button:hover {
+    background: rgba(0, 0, 0, .2);
+}
+
+
+
+.quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 35%;
+    
+    pointer-events: none;
+}
+.quote {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-size: 1.2rem;
+    width: 80%;
+    height: 150px;
+
+    padding: 2rem;
+}
+
+/* MEDIA QUERIES */
+/* to fix some issues with very small devices */
+@media (max-width: 340px) {
+    .quote {
+        padding: 1.5rem;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) {
+    
+    .slider-container {
+        position: absolute;
+        top: 15%;
+        width: 80%;
+        margin: 0 10%;
+        z-index: 10;
+        overflow-x: hidden;
+    }
+    
+
+    .slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        min-width: 100%;
+        z-index: 10;
+    }
+
+    .mobile-controls {
+        display: none;
+    }
+
+    .desktop-controls {
+        display: inline;
+        position: absolute;
+        top: 85%;
+        left: 80%;
+
+        width: 10%;
+        height: 5%;
+        z-index: 11;
+    } 
+
+    .slider-button:hover {
+        background: transparent;
+        transform: scale(1.2);
+    }
+
+    .slider-button {
+        color: black;
+    }
+
+    .quote-container {
+        z-index: 10;
+        top: 77%;
+        left: 10%;
+        width: 50%;
+    }
+
+    .quote {
+        font-size: 1.8rem;
+        padding: 2rem 1rem;
+    }
+
+}

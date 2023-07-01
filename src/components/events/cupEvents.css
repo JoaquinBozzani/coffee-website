@@ -1,0 +1,83 @@
+/* EVENT CONTAINER */
+.title {
+    color: black;
+    font-weight: normal;
+}
+
+.main-text {
+    font-weight: normal;
+    margin-top: 3%;
+    font-size: 1.7rem;
+}
+
+
+.list {
+    list-style-type: none;
+    font-size: 1.1rem;
+}
+
+.list-item {
+    margin: 2% 0;
+}
+
+
+/* NEXT CUP EVENT */
+.next-cup {
+    padding: 10% 0 ;
+    border-bottom: 1px solid lightgray;
+}
+
+/* BUTTON */
+.sign-up-button {
+    font-family: inherit;
+    font-size: 1.1rem;
+    text-align: center;
+
+    width: 100px;
+    margin: 5% 0;
+    padding: 3%;
+    
+    background-color: white;
+    border: 1px solid black;
+    
+    cursor: pointer;
+    transition: .2s ease-in-out all;
+}
+
+.sign-up-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* SCOREBOARD */
+.scoreboard {
+    padding: 10% 0;
+    border-bottom: 1px solid lightgray;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+/* DESKTOP */
+@media (min-width: 1200px) {
+    /* EVENT CONTAINER */
+    .events {
+        margin: 6% 5%;
+    }
+
+    .main-text {
+        font-weight: normal;
+        margin-top: 3%;
+        font-size: 2rem;
+    }
+
+    .list-item {
+        margin: 5% 0;
+    }
+
+
+    /* NEXT CUP EVENT */
+    .next-cup {
+        padding: 0;
+    }
+}
