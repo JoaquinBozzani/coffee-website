@@ -103,31 +103,32 @@
 /* DESKTOP */
 @media (min-width: 1200px) {
     /* ----- ARTICLES ----- */
-    .article {
+    .article-page-container .article {
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
     
-    .article-img {
+    .article-page-container .article-img {
         grid-area: 1 / 1 / 2 / 2;
         height: 100%;
+        object-fit: cover;
     }
     
-    .article-content {
+    .article-page-container .article-content {
         grid-area: 1 / 2 / 2 / 3;
         text-align: justify;
         margin: 0 5%;
     }
 
-    .article-title {
+    .article-page-container .article-title {
         margin: 0;
     }
 
-    .article-date {
+    .article-page-container .article-date {
         margin: 1% 0;
     }
 
-    .article-text {
+    .article-page-container .article-text {
         display: -webkit-box;
         
         font-size: large;
@@ -139,12 +140,12 @@
         text-overflow: ellipsis;
         overflow: hidden;
     
-        height: 45%;
+        height: 50%;
         margin: 0;
     }
 
     /* ARTICLE MODAL BUTTON */
-    .open-article-button {
+    .article-page-container .open-article-button {
         padding: 1%;
     }
 
