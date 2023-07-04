@@ -26,7 +26,7 @@ main {
     main {
         display: flex;
         flex-direction: row;
-        margin: 40% 8% 10% 8%;
+        margin: 40% 10% 10% 10%;
         border-bottom: 1px solid lightgray;
     }
 
