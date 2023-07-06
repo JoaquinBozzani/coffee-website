@@ -28,7 +28,7 @@ nav {
 }
 
 .page-logo {
-    width: 80%;
+    width: 80vw;
     padding: 1%;
 }
 
@@ -282,7 +282,7 @@ nav {
     .icon-container {
         display: inline-block;
     
-        width: 15%;
+        width: 6vw;
         height: 100%;
         margin: 0;
     
@@ -290,7 +290,7 @@ nav {
     }
     
     .social-icon {
-        margin: 5%;
+        margin: 3%;
     }
 
     /* LINKS */
