@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import {React, useEffect, useRef, useState} from 'react'
 import searchIconStatic from '../../../assets/search.svg'
 import articleData from '../../articlePages/article-data.js';
 import Article from '../../article/Article';
@@ -13,12 +13,32 @@ const Searchbar = () => {
       console.log(e.target.value)
     }
 
+
     //showing search results
     const [isUserSearching, setIsUserSearching] = useState(false);
     
     function handleSearchResults() {
         setIsUserSearching(!isUserSearching)
     }
+
+
+    //closing searchbar if user clicks outside 
+    let searchResultsRef = useRef();
+
+    useEffect(() => {
+        function handleMouseDown(e) {
+            if(!searchResultsRef.current.contains(e.target) && isUserSearching) {
+                setIsUserSearching(!isUserSearching);
+            }
+        }
+        document.addEventListener('mousedown', handleMouseDown);
+
+        //removing event listener
+        return() => {
+            document.removeEventListener('mousedown', handleMouseDown)
+        }
+    })
+
 
 
     return (
@@ -29,7 +49,7 @@ const Searchbar = () => {
             </div>
 
             <Modal className={`search-results ${isUserSearching ? 'open' : ''}`}>
-                <div className='search-data'>
+                <div className='search-data' ref={searchResultsRef}>
                 {
                     // check if there is data
                     articleData && articleData
