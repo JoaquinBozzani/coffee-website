@@ -132,14 +132,13 @@
     .article-page-container .article-text {
         display: -webkit-box;
         
-        font-size: large;
+        font-size: larger;
         line-height: 2rem;
         
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical; 
         
         text-overflow: ellipsis;
-        overflow: hidden;
     
         height: 50%;
         margin: 0;

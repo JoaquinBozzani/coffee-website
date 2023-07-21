@@ -278,6 +278,7 @@ nav {
         z-index : 100;
         overflow-y: scroll;
     }
+
     .search-results.open::-webkit-scrollbar{
         display: none;
       }

@@ -71,6 +71,7 @@ body.article-modal.open {
 
 
 /* ----- MEDIA QUERIES ----- */
+
 /* DESKTOP */
 @media (min-width: 1200px) {
     /* ----- MODAL OVERLAY ----- */
@@ -79,19 +80,26 @@ body.article-modal.open {
         justify-content: center;
         background-color: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(40px);
-        padding: 10%;
+        padding: 1% 10%;
+        overflow-x: hidden;
     }
-    
-    .modal-text-container {
-        padding: 0 5%;
 
+    .modal-text-container {
+        display: inline-block;
+        padding: 0 5%;
     }
 
     /* MODAL */
     .modal-content {
-        width: 50vw;
-        height: 100vh;
+        width: 35vw;
+        height: 95vh;
         background-color: white;
+        overflow: visible;
+        overflow-y: scroll;
+    }
+
+    .modal.article-modal.open {
+        overflow-x: hidden;
     }
 
 }
